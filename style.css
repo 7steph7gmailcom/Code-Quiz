@@ -1,4 +1,44 @@
 * {
   box-sizing: border-box;
-  background-color: rgba(120, 185, 142, 0.884);
+}
+
+.Test your Pet Knowledge {
+  display: inline;
+  text-align: end;
+  margin: 100%;
+  color: black;
+  font-size: 200px;
+}
+
+body {
+  font-family: Arial;
+  color: black;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  image-rendering: auto;
+}
+
+.right {
+  right: 0;
+  background-color: gray;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
