@@ -3,8 +3,8 @@
 WHEN I click the start button
 THEN a timer starts and I am presented with a question
 
-    event button
-    time function
+    event "click" button
+    time function  (window object allows for time events)
     init quiz
 
 WHEN I answer a question
