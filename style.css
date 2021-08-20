@@ -4,10 +4,8 @@
 
 .Test your Pet Knowledge {
   display: inline;
-  text-align: end;
-  margin: 100%;
   color: black;
-  font-size: 200px;
+  font-size: 125px;
 }
 
 body {
@@ -49,11 +47,6 @@ h1 {
 }
 
 .start button {
-  size: 75%px;
-  .button2:hover {
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-      0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  }
 }
 
 .container {
@@ -62,10 +55,17 @@ h1 {
   background-color: black;
 }
 
-footer {
+.HighScore {
+  color: rgb(182, 147, 34);
+  font-size: 25px;
+  font: bold;
+  text-align: center;
+  clear: both;
+  position: absolute;
+  top: 575px;
+  right: 115px;
   width: 450px;
   height: 100px;
   background-color: black;
-  margin: 500px, 300px, 100px, 100px;
-  margin: none;
+  display: inline;
 }

@@ -10,7 +10,7 @@ THEN a timer starts and I am presented with a question
 WHEN I answer a question
 THEN I am presented with another question
 
-    must get questions to carousel after user response
+    must get questions to carousel/rotate after user response
 
 WHEN I answer a question incorrectly
 THEN time is subtracted from the clock
