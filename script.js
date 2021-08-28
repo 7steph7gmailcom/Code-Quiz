@@ -4,9 +4,11 @@ var questionsContainerEl = document.getElementById("questions_container");
 
 var questionEl = document.getElementById("questions");
 
-var 
+var quizTimer = document.getElementById("timer");
 
+var answerButton = document.getElementById("answers");
 
+var currentQuestionIndex = "";
 
 
 
@@ -25,7 +27,7 @@ var questions = [
     answers: [
       { A: "They are heat seekers"},
       { B: "Cats will sleep on average 16 -20 hours per day"},
-      { C: "Felines are "true carnivores" - they need protein in order to live" },
+      { C: "Felines are true carnivores - they need protein in order to live" },
       { D: "All the above" },
     ],
     Answer: "D, All the above are true!",
@@ -46,7 +48,7 @@ var questions = [
       { B: "Seasonal allergies making your dog cough that occur with too much time spent outdoors" },
       { C: "A disease caused by either a virus or bacteria. With it's main telltale symptom as a persistant goose or honking cough" },
     ],
-    Answer: "Jupiter",
+    Answer: "Both A and C",
   },
   {
     question: "Is it better to have a cat or dog as a family member?",
@@ -58,4 +60,83 @@ var questions = [
     Answer: "B, They are both wonderful!!!",
   },
 ];
+
+
+
+function startQuiz() {
+  setTime();
+  displayScore.classList.add("hide");
+  startButton.classList.add("hide");
+  questionContainerEl.classList.remove("hide");
+  currentQuestionIndex = 0;
+  correctAnswerCount = 0;
+  setNextQuestion();
+}
+
+
+
+function nextQuestion() {
+  resetState();
+  showQuestion(questions[currentQuestionIndex]);
+}
+
+
+
+	function questionDisplay(question) {
+	  questionEl.innerText = question.question;
+	  question.answers.forEach(function (answer) {
+	   
+	    var button = document.createElement("button");
+	    
+	    button.innerText = answer.answer;
+	    button.addEventListener("click", selectAnswer);
+	    answerButtons.appendChild(button);
+	  });
+	  
+	}
+	
+
+	function resetState() {
+	  answerButtons.innerHTML = "";
+	}
+
+
+
+
+
+function questionsCarousel(event) {
+  var selectButton = event.target;
+  console.log(selectButton.textContent);
+
+  console.log(questions[currentQuestionIndex].correctAnswer);
+
+  if (
+    selectButton.textContent == questions[currentQuestionIndex].correctAnswer
+  ) {
+    correctAnswerCount += 5;
+  } else {
+    secondsLeft = secondsLeft - 10;
+    
+      console.log(correctAnswerCount);
+  }
+
+  if (questions.length > currentQuestionIndex + 1) {
+    currentQuestionIndex++;
+    setNextQuestion();
+    console.log(currentQuestionIndex);
+  } else {
+    GameOver();
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
