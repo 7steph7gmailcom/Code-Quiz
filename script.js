@@ -67,7 +67,7 @@ function startQuiz() {
   setTime();
   displayScore.classList.add("hide");
   startButton.classList.add("hide");
-  questionContainerEl.classList.remove("hide");
+  questionsContainerEl.classList.remove("hide");
   currentQuestionIndex = 0;
   correctAnswerCount = 0;
   setNextQuestion();

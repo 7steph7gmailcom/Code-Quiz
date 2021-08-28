@@ -8,12 +8,40 @@
   font-size: 125px;
   position: absolute;
   top: 100px;
+  display: block;
 }
 
 body {
   font-family: Arial;
   color: black;
 }
+
+.start button {
+}
+
+
+.answer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+
+.hide {
+  display: none;
+}
+
+
+
+.Q_container {
+  width: 500px;
+  height: 350px;
+  background-color: black;
+  padding: 25px;
+  display: block;
+}
+
 
 .split {
   height: 100%;
@@ -48,58 +76,27 @@ h1 {
   text-align: center;
 }
 
-.start button {
-}
 
 
-/* .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 800px;
-  max-width: 80%;
-  background-color: rgb(54, 228, 210);
-  border-radius: 5px;
-  padding: 10px;
-  
-} */
-
-
-.answer-grid {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  gap: 10px;
-  margin: 20px 0;
-}
-
-
-.hide {
-  display: none;
-}
-
-
-
-.container {
-  width: 500px;
-  height: 350px;
-  background-color: black;
-  padding: 25px;
+#high_score_btn {
+  position: absolute;
+  top: 430px;
+  right: 175px;
   display: block;
-  box-shadow: 0 0 10px 2px;
+  background-color: rgb(204, 165, 38);
+  width: 125px;
+  height: auto
 }
 
 
 .HighScore {
-  color: rgb(182, 147, 34);
-  font-size: 25px;
-  font: bold;
-  text-align: center;
   clear: both;
   position: absolute;
-  top: 600px;
-  right: 94px;
+  top: 425px;
+  right: 1px;
   width: 500px;
   height: 120px;
   background-color: black;
-  display: block
+  display: inline
 }
+
