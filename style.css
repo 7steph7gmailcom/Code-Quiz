@@ -16,7 +16,12 @@ body {
   color: black;
 }
 
-.start button {
+#start_button {
+  position: absolute;
+  top: 20px;
+  right: 220px;
+  
+  background-color: rgb(204, 165, 38);
 }
 
 
@@ -76,20 +81,18 @@ h1 {
   text-align: center;
 }
 
-
-
 #high_score_btn {
   position: absolute;
   top: 430px;
-  right: 175px;
+  right: 195px;
   display: block;
-  background-color: rgb(204, 165, 38);
+  background-color: rgb(73, 88, 173);
   width: 125px;
   height: auto
 }
 
 
-.HighScore {
+#HighScore {
   clear: both;
   position: absolute;
   top: 425px;

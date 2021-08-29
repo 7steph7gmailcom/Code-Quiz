@@ -1,15 +1,30 @@
-var startButton = document.getElementById("start button");
+var userName = "";
+
+var start_button = document.getElementById("start_button");
+
+var timerInterval;
+
+var secondsLeft = 60;
 
 var questionsContainerEl = document.getElementById("questions_container");
 
-var questionEl = document.getElementById("questions");
+var questionsEl = document.getElementById("questions");
 
 var quizTimer = document.getElementById("timer");
 
-var answerButton = document.getElementById("answers");
+var answerButton = document.getElementById("answer_button");
 
 var currentQuestionIndex = "";
 
+var answerCount = 0;
+
+var userScore = document.getElementById("userScore");
+
+var submitScore = document.getElementById("submitName");
+
+var displayScore = document.getElementById("display-score");
+
+var highScoreBtn = document.getElementById("high-score-btn");
 
 
 var questions = [
@@ -66,7 +81,7 @@ var questions = [
 function startQuiz() {
   setTime();
   displayScore.classList.add("hide");
-  startButton.classList.add("hide");
+  start_button.classList.add("hide");
   questionsContainerEl.classList.remove("hide");
   currentQuestionIndex = 0;
   correctAnswerCount = 0;
