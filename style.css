@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
 }
 
@@ -9,6 +9,12 @@
   position: absolute;
   top: 100px;
   display: block;
+}
+Time,
+#timeLeft {
+position: absolute;
+top: 100px;
+right: 35px;
 }
 
 body {
@@ -24,28 +30,32 @@ body {
   background-color: rgb(204, 165, 38);
 }
 
+/* #questions_container {
 
-.answer-grid {
+
+} */
+
+/* .answer-grid {
   display: grid;
   grid-template-columns: repeat(2, auto);
   gap: 10px;
   margin: 20px 0;
-}
+} */
 
-
+/* 
 .hide {
   display: none;
 }
 
-
-
-.Q_container {
+#Q_container,
+#questions_container {
   width: 500px;
   height: 350px;
-  background-color: black;
+  background-color: rgb(235, 228, 228);
   padding: 25px;
   display: block;
-}
+  color: azure;
+} 
 
 
 .split {
@@ -101,5 +111,62 @@ h1 {
   height: 120px;
   background-color: black;
   display: inline
+}
+
+#display_score {
+display: inline;
+
+} */ 
+
+/* Integrate CSS after bootcamp!!! */
+
+
+body {
+  background-color: #f2f2f2; 
+}
+
+h1, 
+h2 {
+  color: #313740;
+  font-family: sans-serif;
+}
+
+a {
+  color: #3290A6;
+  font-family: sans-serif;
+}
+
+a:hover {
+  color: #99B8BF;
+  font-family: sans-serif;
+}
+
+.btn:focus, .btn:active, .btn:visited {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #343a40;
+}
+
+#finalScore {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+span {
+  font-family: sans-serif;
+}
+
+p {
+  font-family: sans-serif;
+}
+
+#questionTitle {
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+#answerCheck {
+  font-style: italic;
+  color: #4D5159;
 }
 
