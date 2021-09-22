@@ -1,28 +1,74 @@
-# Code-Quiz
+# Code Quiz
 
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
+## Stephanie Johansson
 
-    event "click" button
-    time function  (window object allows for time events)
-    init quiz
+Code Quiz - This project was to create a quiz about any subject matter you wish.
+The user should be able to start the quiz by pushing a button that starts a time clock. Then a series of questions should be presented allowing the user to answer each question. Every question that is answered incorrectly will take off 10 seconds to their quiz time. At the end of the quiz the correct number of answers should populate and the user then prompted with a space is sign their initials to record their score. Local storage should keep track of the high scores of the game for the user. 
+Code Quiz - This project was to create a quiz about any subject matter you wish. 
+## Screenshot of Finished Project
 
-WHEN I answer a question
-THEN I am presented with another question
 
-    must get questions to carousel/rotate after user response
+https://drive.google.com/file/d/1Fr3V5saM-4-XmrPe9opdxAYZNt-aNueI/view?usp=sharing
 
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
 
-    decrement function to time clock after incorrect answer
+## Technology Used
 
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
+- HTML
+- CSS
+- Java Script
 
-    prompt function for user to know game over
+## Resources Used
 
-WHEN the game is over
-THEN I can save my initials and my score
+- [Google](https://google.com)
+- [Moment.js](https://momentjs.com)
+- [w3schools](https://w3schools.com)
+- [cdnjs](https://cdnjs.com)
+- [MDN Web Docs](https://developer.mozilla.org)
 
-    must keep local storage of quiz score
+## Setup/Installation Requirements
+
+- internet service
+- device with a monitor
+- a web browser is needed to view application
+- Github account to view code
+- click on URL code to view HTML document
+- cut and paste Github repository to view code
+
+## Contact Information
+
+stephanie.johansson@gmail.com
+
+linkedin.com/in/stephanie.johansson-934096213
+
+
+## Technology Used
+
+- HTML
+- CSS
+- Java Script
+- Node JS
+- Heroku
+
+## Resources Used
+
+- [Google](https://google.com)
+- [Moment.js](https://momentjs.com)
+- [w3schools](https://w3schools.com)
+- [cdnjs](https://cdnjs.com)
+- [MDN Web Docs](https://developer.mozilla.org)
+
+## Setup/Installation Requirements
+
+- internet service
+- device with a monitor
+- a web browser is needed to view application
+- Github account to view code
+- click on URL code to view HTML document
+- cut and paste Github repository to view code
+- Heroku deployment page
+
+## Contact Information
+
+stephanie.johansson@gmail.com
+
+linkedin.com/in/stephanie.johansson-934096213
